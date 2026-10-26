@@ -1,0 +1,559 @@
+[
+  {
+    "id": "arco-1",
+    "title": "Arco 1: La Llegada al Río (Do Jũẽi)",
+    "category": "Arco 1: Saludo y Presentación",
+    "description": "Llegas en balsa a la orilla del río Dóbida. Tu anfitrión Ache te recibe en su canoa (jãba). Aprende a saludar, decir tu nombre y expresar bienestar con filtro afectivo cero.",
+    "icon": "anchor",
+    "badge": "Básico A1 • 24 Lemas",
+    "steps": [
+      {
+        "speaker": "Ache Dóbida",
+        "speaker_role": "Joven barquero del río",
+        "avatar": "🛶",
+        "text_embera": "¡Mẽrã ache! Bia zebʉrʉ doɗe. ¿Bʉ bia ɓʉca?",
+        "text_spanish": "¡Hola amigo! Bienvenido al río. ¿Estás bien?",
+        "audio_hint": "Saludo tradicional con tono suave y alegre",
+        "native_audio": {
+          "file": "lesson1_audio.mp3",
+          "start": 1.4,
+          "end": 4.5,
+          "label": "Saludo en el río"
+        },
+        "ghost_prompt": "Susurro: Empieza diciendo: 'Bia ɓʉa, ache...'",
+        "user_prompt": "Salúdalo cordialmente y dile que estás muy bien y contento:",
+        "focus_on_form": "💡 Partícula Preguntadora -ca: ¿Bʉ bia ɓʉca? convierte la afirmación en pregunta amistosa.",
+        "options": [
+          {
+            "embera": "¡Mẽrã ache! Mʉ bio bia ɓʉa, capipia ɓʉa.",
+            "spanish": "¡Hola amigo! Yo estoy muy bien, estoy contento.",
+            "correct": true,
+            "explanation": "¡Excelente! 'Bio bia ɓʉa' (estoy muy bien) y 'capipia ɓʉa' (estoy contento) son del vocabulario de oro.",
+            "recast": "¡Bio biya ɓʉa! Capipia ɓʉa dadjirã ãbaa panʉɗe."
+          },
+          {
+            "embera": "Maéa, mʉ jarrabada ɓʉa.",
+            "spanish": "No, tengo hambre.",
+            "correct": false,
+            "explanation": "Apenas estás saludando; responde primero al saludo cordial."
+          },
+          {
+            "embera": "Wãbʉrʉda deɗaa.",
+            "spanish": "Ya me voy a la casa.",
+            "correct": false,
+            "explanation": "Estás llegando al puerto, no despidiéndote."
+          }
+        ],
+        "blocks": [
+          "¡Mẽrã",
+          "ache!",
+          "Mʉ",
+          "bio",
+          "bia",
+          "ɓʉa,",
+          "capipia",
+          "ɓʉa."
+        ]
+      },
+      {
+        "speaker": "Ache Dóbida",
+        "speaker_role": "Joven barquero",
+        "avatar": "🛶",
+        "text_embera": "Mʉ trʉ Ache. ¿Bʉ trʉ cai?",
+        "text_spanish": "Mi nombre es Ache. ¿Cuál es tu nombre? (¿Quién es tu nombre?)",
+        "audio_hint": "Pregunta de identidad con la partícula Cai (¿Quién?)",
+        "ghost_prompt": "Susurro: Responde: 'Mʉ trʉ...' seguido de tu nombre.",
+        "user_prompt": "Preséntate diciendo tu nombre y agradécele la bienvenida:",
+        "focus_on_form": "💡 En Emberá se pregunta '¿Bʉ trʉ cai?' (literalmente: ¿Tu nombre quién?). Para responder dices 'Mʉ trʉ [Nombre]'.",
+        "options": [
+          {
+            "embera": "Mʉ trʉ Daniel. Bia ɓʉaɗa ache.",
+            "spanish": "Mi nombre es Daniel. Muchas gracias amigo.",
+            "correct": true,
+            "explanation": "¡Perfecto! 'Mʉ trʉ...' fija tu identidad sin titubeos, y 'Bia ɓʉaɗa' expresa gratitud sincera.",
+            "recast": "¡So bia Daniel! Nama mʉ de caita ɓʉa."
+          },
+          {
+            "embera": "Idji trʉ Daniel.",
+            "spanish": "El nombre de él es Daniel.",
+            "correct": false,
+            "explanation": "Usa 'Mʉ trʉ' (mi nombre), no 'Idji trʉ' (el nombre de él)."
+          },
+          {
+            "embera": "¿Cãrẽ nama panʉda?",
+            "spanish": "¿Qué hacemos aquí?",
+            "correct": false,
+            "explanation": "Responde primero a la pregunta sobre tu nombre."
+          }
+        ],
+        "blocks": [
+          "Mʉ",
+          "trʉ",
+          "Daniel.",
+          "Bia",
+          "ɓʉaɗa",
+          "ache."
+        ]
+      },
+      {
+        "speaker": "Ache Dóbida",
+        "speaker_role": "Joven barquero",
+        "avatar": "🛶",
+        "text_embera": "¿Sãmaʉba zesia bʉra? ¿Do ʉtaa wa barrea?",
+        "text_spanish": "¿De dónde viniste tú? ¿Río arriba o río abajo?",
+        "audio_hint": "Pregunta de procedencia geográfica en el río",
+        "ghost_prompt": "Susurro: Di: 'Mʉ zesia do ɓarreaba...' (Vine de río abajo)",
+        "user_prompt": "Dile que viniste de río abajo en una canoa pequeña:",
+        "focus_on_form": "💡 Pasado simple con -sia: Zei (Venir) -> Zesia (Vino/Vine). Wãrãga (Río arriba) / Ɓarrea (Río abajo).",
+        "options": [
+          {
+            "embera": "Mʉ zesia do ɓarreaba, jãba zaqueɗe.",
+            "spanish": "Yo vine de río abajo, en una canoa pequeña.",
+            "correct": true,
+            "explanation": "¡Exacto! 'Ɓarrea' es río abajo y 'jãba zaque' es canoa pequeña.",
+            "recast": "¡Wãrã! Do ɓarreaba zesia. Jãba ededua nama icawa."
+          },
+          {
+            "embera": "De obari.",
+            "spanish": "Constructor de casas.",
+            "correct": false,
+            "explanation": "No indica de dónde vienes."
+          },
+          {
+            "embera": "Neéa baido.",
+            "spanish": "No hay agua.",
+            "correct": false,
+            "explanation": "No responde a la dirección geográfica del río."
+          }
+        ],
+        "blocks": [
+          "Mʉ",
+          "zesia",
+          "do",
+          "ɓarreaba,",
+          "jãba",
+          "zaqueɗe."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arco-2",
+    "title": "Arco 2: En el Tambo / Convivencia (Deɗe Panʉ)",
+    "category": "Arco 2: Familia y Necesidades",
+    "description": "Subes al tambo sobre pilotes. Nana te ofrece comida y agua fresca del calabazo. Aprende a nombrar a la familia, pedir comida y manifestar descanso.",
+    "icon": "home",
+    "badge": "Básico A1 • 52 Lemas",
+    "steps": [
+      {
+        "speaker": "Nana (Madre del Tambo)",
+        "speaker_role": "Matriarca del hogar",
+        "avatar": "🏡",
+        "text_embera": "¡Bia zebʉrʉ mʉ deɗe! ¿Bʉ jarrabada ɓʉca? ¿Opichia ɓʉca?",
+        "text_spanish": "¡Bienvenido a mi casa! ¿Tienes hambre? ¿Tienes sed?",
+        "audio_hint": "Hospitalidad tradicional Emberá",
+        "ghost_prompt": "Susurro: Di: 'Mãẽ nana, opichia ɓʉa...'",
+        "user_prompt": "Acepta amablemente diciendo que tienes sed y pidiendo agua fresca:",
+        "focus_on_form": "💡 El locativo -ɗe: De (Casa) -> Deɗe (En la casa). Estados: Jarrabada (Hambre), Opichia (Sed).",
+        "options": [
+          {
+            "embera": "Mãẽ nana, opichia ɓʉa. ¿Baido ɓʉca nama?",
+            "spanish": "Sí madre, tengo sed. ¿Hay agua aquí?",
+            "correct": true,
+            "explanation": "¡Excelente! 'Baido' (agua) y la fórmula de cortesía 'nana' generan confianza inmediata.",
+            "recast": "¡Nama baido wuarra ɓʉa! Doidua calabazoɗeba."
+          },
+          {
+            "embera": "Wãbʉda jũma.",
+            "spanish": "Nos vamos todos.",
+            "correct": false,
+            "explanation": "Acabas de entrar al tambo, no rechaces la hospitalidad."
+          },
+          {
+            "embera": "Imama purruba.",
+            "spanish": "El tigre marchito.",
+            "correct": false,
+            "explanation": "Frase incoherente con la situación del hogar."
+          }
+        ],
+        "blocks": [
+          "Mãẽ",
+          "nana,",
+          "opichia",
+          "ɓʉa.",
+          "¿Baido",
+          "ɓʉca",
+          "nama?"
+        ]
+      },
+      {
+        "speaker": "Nana (Madre del Tambo)",
+        "speaker_role": "Matriarca del hogar",
+        "avatar": "🏡",
+        "text_embera": "Nama paɗa ɓʉa, ɓeda siɗa. ¡Coidua ache!",
+        "text_spanish": "Aquí hay plátano, y también pescado. ¡Come amigo!",
+        "audio_hint": "Ofrecimiento de la cena cotidiana",
+        "ghost_prompt": "Susurro: Di: 'Bia ɓʉaɗa nana, paɗara bio wuarra ɓʉa.'",
+        "user_prompt": "Agradece la comida y elogia lo sabroso que está el pescado:",
+        "focus_on_form": "💡 Imperativo amable -dua: Coi (Comer) -> ¡Coidua! (¡Come!). 'Wuarra' = Sabroso / Delicioso.",
+        "options": [
+          {
+            "embera": "Bia ɓʉaɗa nana. Ɓedara bio wuarra ɓʉa.",
+            "spanish": "Muchas gracias madre. El pescado está muy sabroso.",
+            "correct": true,
+            "explanation": "¡Muy bien! 'Ɓeda' (pescado) con la implosiva Ɓ y 'wuarra' (sabroso) es la respuesta perfecta.",
+            "recast": "¡Capipia ɓʉa! Cuaria jũmara capipia panʉ bʉme."
+          },
+          {
+            "embera": "Neéa paɗa.",
+            "spanish": "No hay plátano.",
+            "correct": false,
+            "explanation": "Te acaban de servir un racimo entero de plátano."
+          },
+          {
+            "embera": "Mʉ cãĩ wãya.",
+            "spanish": "Me voy a dormir.",
+            "correct": false,
+            "explanation": "Primero comparte la mesa y agradece la comida."
+          }
+        ],
+        "blocks": [
+          "Bia",
+          "ɓʉaɗa",
+          "nana.",
+          "Ɓedara",
+          "bio",
+          "wuarra",
+          "ɓʉa."
+        ]
+      },
+      {
+        "speaker": "Zeze (Padre del Tambo)",
+        "speaker_role": "Padre de familia",
+        "avatar": "🧔🏽",
+        "text_embera": "¿Bʉ ʉbʉaé ɓʉca? Nama jiraba ɓʉa cãĩ carea.",
+        "text_spanish": "¿Estás cansado? Aquí hay una hamaca para dormir.",
+        "audio_hint": "Paz y descanso en el tambo nocturno",
+        "ghost_prompt": "Susurro: Di: 'Mãẽ zeze, ʉbʉaé ɓʉa. Cãĩya jirabaɗe.'",
+        "user_prompt": "Dile que sí estás cansado y que dormirás en la hamaca con el corazón en paz:",
+        "focus_on_form": "💡 Expresión cultural: 'So bia' (corazón bueno / paz interior). Futuro simple: Cãĩya (dormiré).",
+        "options": [
+          {
+            "embera": "Mãẽ zeze, ʉbʉaé ɓʉa. Cãĩya jirabaɗe so biade.",
+            "spanish": "Sí padre, estoy cansado. Dormiré en la hamaca con paz.",
+            "correct": true,
+            "explanation": "¡Excelente! 'Ʉbʉaé' (cansado), 'jiraba' (hamaca) y 'so bia' (corazón en paz).",
+            "recast": "¡So biade cãĩdua! Cuaria ãbaa panʉ nama."
+          },
+          {
+            "embera": "Dama ɓʉa cʉdaɗe.",
+            "spanish": "Hay una serpiente en la cama.",
+            "correct": false,
+            "explanation": "¡No des alarma cuando te están ofreciendo una hamaca limpia!"
+          },
+          {
+            "embera": "Sãmaʉba zesia?",
+            "spanish": "¿De dónde viniste?",
+            "correct": false,
+            "explanation": "Zeze te está ofreciendo descansar, no preguntando tu viaje."
+          }
+        ],
+        "blocks": [
+          "Mãẽ",
+          "zeze,",
+          "ʉbʉaé",
+          "ɓʉa.",
+          "Cãĩya",
+          "jirabaɗe",
+          "so",
+          "biade."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arco-3",
+    "title": "Arco 3: Navegación y Expedición (Jãbaɗe Nĩbai)",
+    "category": "Arco 3: Naturaleza y Rumbo",
+    "description": "Temprano por la mañana abordas la canoa con Ache. Aprendes a remar, advertir animales en la orilla y coordinar direcciones fluviales.",
+    "icon": "navigation",
+    "badge": "Intermedio A1 • 78 Lemas",
+    "steps": [
+      {
+        "speaker": "Ache Dóbida",
+        "speaker_role": "Compañero de canoa",
+        "avatar": "🌊",
+        "text_embera": "¡Ɗoi ededua ache! Jãba boyani wãrãga.",
+        "text_spanish": "¡Toma el canalete amigo! Vamos a flotar en la canoa río arriba.",
+        "audio_hint": "Instrucción náutica enérgica",
+        "ghost_prompt": "Susurro: Di: 'Ɗoi eroba, dowini wãrãga!'",
+        "user_prompt": "Confirma que tienes el canalete listo y que remarás con fuerza:",
+        "focus_on_form": "💡 Par mínimo clave: Ɗoi (canalete con implosiva ɗ) vs Doi (beber con d suave).",
+        "options": [
+          {
+            "embera": "Ɗoi eroba ache. ¡Dowini juerzaba wãrãga!",
+            "spanish": "Tengo el canalete amigo. ¡Rememos con fuerza río arriba!",
+            "correct": true,
+            "explanation": "¡Perfecto! Distinguiste 'Ɗoi' (canalete) y usaste el verbo cooperativo 'dowini' (rememos).",
+            "recast": "¡Mãwã ache! Jãba pira wãbʉrʉ baido ʉtʉ."
+          },
+          {
+            "embera": "Baido doi quĩrĩã ɓʉ.",
+            "spanish": "Quiero beber agua.",
+            "correct": false,
+            "explanation": "Confundiste 'Doi' (beber) con 'Ɗoi' (el canalete de remar)."
+          },
+          {
+            "embera": "Cãĩ wãbʉrʉda.",
+            "spanish": "Me voy a dormir.",
+            "correct": false,
+            "explanation": "Están en plena expedición en medio del río."
+          }
+        ],
+        "blocks": [
+          "Ɗoi",
+          "eroba",
+          "ache.",
+          "¡Dowini",
+          "juerzaba",
+          "wãrãga!"
+        ]
+      },
+      {
+        "speaker": "Ache Dóbida",
+        "speaker_role": "Compañero de canoa",
+        "avatar": "🌊",
+        "text_embera": "¡Acʉdua icawa! ¿Cãrẽ ɓʉ mama bacuru caita? ¿Dama ɓʉca?",
+        "text_spanish": "¡Mira a la orilla! ¿Qué hay allá cerca del árbol? ¿Es una serpiente?",
+        "audio_hint": "Voz atenta y prudente señalando la vegetación",
+        "ghost_prompt": "Susurro: Di: 'Maéa dama, patu zaque ɓʉa...'",
+        "user_prompt": "Mira atentamente y aclárale que no es culebra, sino un pato pequeño sobre el tronco:",
+        "focus_on_form": "💡 Negación previa: Maéa (No) / Maéa dama (No es culebra). Patu zaque (Pato pequeño).",
+        "options": [
+          {
+            "embera": "Maéa dama ache, patu zaque ɓʉa bacuru ʉrʉ.",
+            "spanish": "No es serpiente amigo, es un pato pequeño sobre el árbol.",
+            "correct": true,
+            "explanation": "¡Excelente discriminación visual y léxica! 'Patu zaque' (pato pequeño) y 'ʉrʉ' (sobre/encima).",
+            "recast": "¡Ah, patu zaque wãrã! Wayara neéa, boyadua calmaɗe."
+          },
+          {
+            "embera": "Imama bio droma nama ɓʉa.",
+            "spanish": "El jaguar muy grande está aquí.",
+            "correct": false,
+            "explanation": "No provoques pánico, solo es un ave acuática."
+          },
+          {
+            "embera": "Bia zebʉrʉ.",
+            "spanish": "Bienvenido.",
+            "correct": false,
+            "explanation": "No tiene relación con la observación de fauna."
+          }
+        ],
+        "blocks": [
+          "Maéa",
+          "dama",
+          "ache,",
+          "patu",
+          "zaque",
+          "ɓʉa",
+          "bacuru",
+          "ʉrʉ."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arco-4",
+    "title": "Arco 4: Trabajo Comunal y Trueque (Traju oɗe)",
+    "category": "Arco 4: Cooperación y Cuentas",
+    "description": "Llegan a la aldea vecina. Se organiza la recolección de leña para la cocina colectiva. Aprende a contar, pedir herramientas y practicar la ayuda mutua (Carebai).",
+    "icon": "users",
+    "badge": "Avanzado A1 • 103 Lemas",
+    "steps": [
+      {
+        "speaker": "Compañero Comunitario",
+        "speaker_role": "Agricultor y leñador",
+        "avatar": "🧺",
+        "text_embera": "¿Bãrãba dai carebaica tʉbʉ jʉrʉi? Sagara neéa nama.",
+        "text_spanish": "¿Ustedes nos ayudan a buscar leña? No hay hacha aquí.",
+        "audio_hint": "Petición de colaboración comunitaria",
+        "ghost_prompt": "Susurro: Di: 'Mãẽ, dai uméba carebaya. Mʉba neco eroba.'",
+        "user_prompt": "Ofrece ayuda diciendo que ustedes dos colaborarán y que tú tienes el machete:",
+        "focus_on_form": "💡 Números y compañía: Dai umé (Nosotros dos). Neco (Herramienta / Machete). Carebaya (Ayudaré/Ayudaremos).",
+        "options": [
+          {
+            "embera": "Mãẽ, dai uméba carebaya. Mʉba neco eroba tʉbʉ carea.",
+            "spanish": "Sí, nosotros dos ayudaremos. Yo tengo el machete para la leña.",
+            "correct": true,
+            "explanation": "¡Brillante! 'Dai umé' (nosotros dos), 'carebaya' (ayudaremos) y 'neco' (machete/herramienta).",
+            "recast": "¡Bia ɓʉaɗa ache! Ãbaa trajani mãẽ."
+          },
+          {
+            "embera": "Neéa parata.",
+            "spanish": "No hay dinero.",
+            "correct": false,
+            "explanation": "Es trabajo comunitario solidario (minga), no una transacción monetaria."
+          },
+          {
+            "embera": "Opichia ɓʉa.",
+            "spanish": "Tengo sed.",
+            "correct": false,
+            "explanation": "Responde primero al compromiso de colaboración."
+          }
+        ],
+        "blocks": [
+          "Mãẽ,",
+          "dai",
+          "uméba",
+          "carebaya.",
+          "Mʉba",
+          "neco",
+          "eroba",
+          "tʉbʉ",
+          "carea."
+        ]
+      },
+      {
+        "speaker": "Artesana Emberá",
+        "speaker_role": "Tejedora de canastos",
+        "avatar": "🧺",
+        "text_embera": "Nama jamara biada ɓʉa. ¿Jũmasã quĩrĩã ɓʉ bʉra?",
+        "text_spanish": "Aquí hay canastos muy buenos. ¿Cuántos quieres tú?",
+        "audio_hint": "Ofrecimiento de artesanía tradicional",
+        "ghost_prompt": "Susurro: Di: 'Jamara umé quĩrĩã ɓʉa...' (Quiero dos canastos)",
+        "user_prompt": "Dile que quieres dos canastos para llevar frutas y plátanos:",
+        "focus_on_form": "💡 Pregunta de cantidad: ¿Jūmasā? (¿Cuánto/Cuántos?). Números: Umé (2), Ũbea (3).",
+        "options": [
+          {
+            "embera": "Jamara umé quĩrĩã ɓʉa, paɗa siɗa nejõ edei carea.",
+            "spanish": "Quiero dos canastos, para llevar plátano y fruta.",
+            "correct": true,
+            "explanation": "¡Exacto! 'Jamara umé' (dos canastos), 'nejõ' (fruta) y 'edei carea' (para llevar).",
+            "recast": "¡Bia quirua! Jamara umé diai bʉa."
+          },
+          {
+            "embera": "Aɓabe jamara neéa.",
+            "spanish": "Ni un solo canasto no hay.",
+            "correct": false,
+            "explanation": "La tejedora tiene una hilera entera de canastos."
+          },
+          {
+            "embera": "Cãĩ wãbʉrʉda.",
+            "spanish": "Me voy a dormir.",
+            "correct": false,
+            "explanation": "No cuadra en el intercambio comunal."
+          }
+        ],
+        "blocks": [
+          "Jamara",
+          "umé",
+          "quĩrĩã",
+          "ɓʉa,",
+          "paɗa",
+          "siɗa",
+          "nejõ",
+          "edei",
+          "carea."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arco-5",
+    "title": "Arco 5: Historias al Atardecer (Queuboɗo Nẽbʉrʉda)",
+    "category": "Arco 5: Memoria y Emociones",
+    "description": "Cae la noche sobre el río. Toda la comunidad se reúne alrededor del fuego. El anciano Drõã relata las memorias antiguas y llega el momento de despedirse con el corazón lleno de gozo.",
+    "icon": "flame",
+    "badge": "Maestría A1 • 125 Lemas",
+    "steps": [
+      {
+        "speaker": "Drõã (Anciano Sabio)",
+        "speaker_role": "Narrador de la memoria colectiva",
+        "avatar": "🔥",
+        "text_embera": "Queuboɗo urua uruadua. Dãrãbʉrʉɗe dadji drõãrãba beɗea biada nẽbʉrʉsidaa.",
+        "text_spanish": "Al atardecer enciendan el fuego. Hace mucho tiempo nuestros antepasados contaron buenas palabras.",
+        "audio_hint": "Voz profunda y serena de la tradición oral",
+        "ghost_prompt": "Susurro: Di: 'Capipia panʉ ũrĩ carea...'",
+        "user_prompt": "Dile al anciano que están contentos y listos para escuchar con el corazón sereno:",
+        "focus_on_form": "💡 Pasado en plural: -sidaa (contaron/hicieron). Ũrĩ (escuchar atentamente).",
+        "options": [
+          {
+            "embera": "Capipia panʉ drõã, bʉ beɗea ũrĩ carea so biade.",
+            "spanish": "Estamos contentos anciano, para escuchar tus palabras en paz.",
+            "correct": true,
+            "explanation": "¡Conmovedor y perfecto! 'Capipia panʉ' (estamos alegres en plural) y 'ũrĩ carea' (para escuchar).",
+            "recast": "¡So bia! Ũrĩnadua dadjirã beɗea wãrãra."
+          },
+          {
+            "embera": "Neéa baido.",
+            "spanish": "No hay agua.",
+            "correct": false,
+            "explanation": "No interrumpas el relato de la fogata con quejas fuera de lugar."
+          },
+          {
+            "embera": "Wãrãga dowidua.",
+            "spanish": "Rema río arriba.",
+            "correct": false,
+            "explanation": "Ya la canoa está amarrada y el río descansa en la noche."
+          }
+        ],
+        "blocks": [
+          "Capipia",
+          "panʉ",
+          "drõã,",
+          "bʉ",
+          "beɗea",
+          "ũrĩ",
+          "carea",
+          "so",
+          "biade."
+        ]
+      },
+      {
+        "speaker": "Ache Dóbida",
+        "speaker_role": "Amigo y compañero",
+        "avatar": "🛶",
+        "text_embera": "Ache, idi ewari bio bia basiɗaa. ¿Bʉ capipia ɓʉca cuariame?",
+        "text_spanish": "Amigo, hoy fue un día muy bueno. ¿Estás feliz con la familia?",
+        "audio_hint": "Despedida nocturna fraternal",
+        "ghost_prompt": "Susurro: Di: 'Mãẽ ache, bio capipia ɓʉa...'",
+        "user_prompt": "Agradece el día entero y despídete deseando descanso a todos:",
+        "focus_on_form": "💡 Despedida real de tu diccionario: 'Wãbʉrʉda' (cuando se despide 1 persona sola) vs 'Wãbʉda' (cuando parten varios).",
+        "options": [
+          {
+            "embera": "Mãẽ ache, bio capipia ɓʉa. So biade cãĩdua jũmara. ¡Wãbʉrʉda!",
+            "spanish": "Sí amigo, estoy muy feliz. Duerman en paz todos. ¡Adiós!",
+            "correct": true,
+            "explanation": "¡Culminación perfecta de la Aventura A1! Usaste 'Wãbʉrʉda' porque tú solo vas a descansar.",
+            "recast": "¡Wãbʉrʉda Daniel! Nuenama dai waya beɗeani doɗe. ¡So biade cãĩdua!"
+          },
+          {
+            "embera": "Wãbʉda.",
+            "spanish": "Adiós (varios que se van juntos).",
+            "correct": false,
+            "explanation": "En tu diccionario, si se despide una sola persona se usa Wãbʉrʉda."
+          },
+          {
+            "embera": "Jarrabada ɓʉa.",
+            "spanish": "Tengo hambre.",
+            "correct": false,
+            "explanation": "Es hora del reposo, no de empezar a pedir comida."
+          }
+        ],
+        "blocks": [
+          "Mãẽ",
+          "ache,",
+          "bio",
+          "capipia",
+          "ɓʉa.",
+          "So",
+          "biade",
+          "cãĩdua",
+          "jũmara.",
+          "¡Wãbʉrʉda!"
+        ]
+      }
+    ]
+  }
+]

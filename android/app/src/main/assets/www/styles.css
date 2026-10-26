@@ -1,0 +1,138 @@
+/* styles.css - Dóbida Aprende Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #007E84;       /* Turquesa Dóbida */
+  --primary-dark: #005f64;
+  --secondary: #0A84FF;     /* Azul Zafiro */
+  --accent: #FF9500;        /* Ámbar / Oro */
+  --accent-light: #FFFBEB;
+  --bg-page: #F6F8FC;       /* Fondo limpio */
+  --card-bg: #FFFFFF;
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+  --karaoke-active-bg: #FEF3C7;
+  --karaoke-active-border: #D97706;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0F172A;
+  color: var(--text-main);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-embera {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 126, 132, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 126, 132, 0.5);
+}
+
+/* App container phone shell simulation on desktop */
+.app-viewport {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-page);
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 20px 0;
+  }
+  .app-viewport {
+    border-radius: 36px;
+    height: 95vh;
+    min-height: 750px;
+    max-height: 940px;
+    overflow: hidden;
+    border: 8px solid #1E293B;
+  }
+}
+
+/* Tab transition animation */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Karaoke sentence card highlight */
+.karaoke-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 4px solid transparent;
+}
+
+.karaoke-card.active {
+  background-color: #FEF3C7 !important;
+  border-left-color: #D97706 !important;
+  box-shadow: 0 4px 14px -2px rgba(217, 119, 6, 0.25);
+  transform: scale(1.01);
+}
+
+.karaoke-card.active .karaoke-embera-text {
+  color: #78350F !important;
+  font-weight: 700 !important;
+}
+
+.karaoke-card.active .karaoke-spanish-text {
+  color: #92400E !important;
+  font-weight: 600 !important;
+}
+
+/* Word token interactive chip */
+.token-chip {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1px 4px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  border-bottom: 2px dotted #007E84;
+}
+.token-chip:hover {
+  background-color: #E6FFFA;
+  color: #005F64;
+  border-bottom: 2px solid #007E84;
+}
+
+/* Interactive word block */
+.word-block {
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+.word-block:active {
+  transform: scale(0.95);
+}

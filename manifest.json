@@ -1,0 +1,33 @@
+{
+  "name": "Dóbida Aprende | Curso Emberá Dóbida",
+  "short_name": "Dóbida Aprende",
+  "description": "Aventura interactiva para aprender la lengua Emberá Dóbida con Inteligencia Artificial, audio nativo y repetición espaciada.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#007E84",
+  "orientation": "portrait",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "books"]
+}

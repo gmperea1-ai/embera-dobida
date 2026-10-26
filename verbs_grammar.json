@@ -1,0 +1,206 @@
+{
+  "pronouns": [
+    {
+      "person": "1ª Singular (Yo)",
+      "base": "Mʉ̃",
+      "transitive": "Mʉa",
+      "transitive_meaning": "Yo (hago la acción)",
+      "intransitive": "Mʉra",
+      "intransitive_meaning": "Yo soy / Yo estoy",
+      "possessive_before": "Mʉ de",
+      "possessive_before_meaning": "Mi casa",
+      "possessive_after": "Deda mʉre",
+      "possessive_after_meaning": "La casa es mía"
+    },
+    {
+      "person": "2ª Singular (Usted)",
+      "base": "Bʉ",
+      "transitive": "Bʉa",
+      "transitive_meaning": "Usted (hace la acción)",
+      "intransitive": "Bʉra",
+      "intransitive_meaning": "Usted es / Usted está",
+      "possessive_before": "Bʉ de",
+      "possessive_before_meaning": "Su casa",
+      "possessive_after": "Deda bʉre",
+      "possessive_after_meaning": "La casa es suya"
+    },
+    {
+      "person": "3ª Singular (Él / Ella)",
+      "base": "Idji",
+      "transitive": "Idjia",
+      "transitive_meaning": "Él / Ella (hace la acción)",
+      "intransitive": "Idjira",
+      "intransitive_meaning": "Él es / Ella está",
+      "possessive_before": "Idji de",
+      "possessive_before_meaning": "Su casa (de él/ella)",
+      "possessive_after": "Deda idjiɗe",
+      "possessive_after_meaning": "La casa es de él/ella"
+    },
+    {
+      "person": "1ª Plural Exclusivo (Nosotros pocos)",
+      "base": "Dai",
+      "transitive": "Daiba",
+      "transitive_meaning": "Nosotros (los que hablamos, hacemos)",
+      "intransitive": "Daira",
+      "intransitive_meaning": "Nosotros somos / estamos",
+      "possessive_before": "Dai de",
+      "possessive_before_meaning": "Nuestra casa",
+      "possessive_after": "Deda daire",
+      "possessive_after_meaning": "La casa es nuestra"
+    },
+    {
+      "person": "1ª Plural Inclusivo (Nosotros todos)",
+      "base": "Dadjirã",
+      "transitive": "Dadjirãba",
+      "transitive_meaning": "Todos nosotros (incluyendo al oyente)",
+      "intransitive": "Dadjirãra",
+      "intransitive_meaning": "Todos nosotros somos / estamos",
+      "possessive_before": "Dadji de",
+      "possessive_before_meaning": "Nuestra casa de todos",
+      "possessive_after": "Deda dadjire",
+      "possessive_after_meaning": "La casa es de todos nosotros"
+    },
+    {
+      "person": "2ª Plural (Ustedes)",
+      "base": "Bãrã / Mãrã",
+      "transitive": "Bãrãba",
+      "transitive_meaning": "Ustedes (hacen la acción)",
+      "intransitive": "Bãrãra",
+      "intransitive_meaning": "Ustedes son / están",
+      "possessive_before": "Bãrã de",
+      "possessive_before_meaning": "La casa de ustedes",
+      "possessive_after": "Derã bãrãne",
+      "possessive_after_meaning": "Las casas son de ustedes"
+    },
+    {
+      "person": "3ª Plural (Ellos / Ellas)",
+      "base": "Ãdjirã",
+      "transitive": "Ãdjirãba",
+      "transitive_meaning": "Ellos / Ellas (hacen la acción)",
+      "intransitive": "Ãdjirãra",
+      "intransitive_meaning": "Ellos son / están",
+      "possessive_before": "Ãdji dera",
+      "possessive_before_meaning": "Sus casas",
+      "possessive_after": "Derã ãdjiɗe",
+      "possessive_after_meaning": "Las casas son de ellos"
+    }
+  ],
+  "verbs": [
+    {
+      "infinitive": "cawai",
+      "root": "cawa",
+      "spanish": "Aprender / Saber / Conocer",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "beɗeai",
+      "root": "beɗea",
+      "spanish": "Hablar / Conversar",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "carebai",
+      "root": "careba",
+      "spanish": "Ayudar / Apoyar",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "oi",
+      "root": "o",
+      "spanish": "Hacer",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "diai",
+      "root": "dia",
+      "spanish": "Dar",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "ĩjãi",
+      "root": "ĩjã",
+      "spanish": "Creer / Obedecer / Confiar",
+      "is_nasal": true
+    },
+    {
+      "infinitive": "panui",
+      "root": "panu",
+      "spanish": "Responder / Contestar",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "wãi",
+      "root": "wã",
+      "spanish": "Ir",
+      "is_nasal": true
+    },
+    {
+      "infinitive": "trajai",
+      "root": "traja",
+      "spanish": "Trabajar",
+      "is_nasal": false
+    },
+    {
+      "infinitive": "unui",
+      "root": "unu",
+      "spanish": "Ver / Encontrar",
+      "is_nasal": true
+    },
+    {
+      "infinitive": "zocai",
+      "root": "zoca",
+      "spanish": "Vivir",
+      "is_nasal": false
+    }
+  ],
+  "tenses": [
+    {
+      "id": "pres_cont",
+      "name": "Presente Continuo (Haciendo ahora)",
+      "suffix_singular": " ɓʉ",
+      "suffix_plural": " panʉ",
+      "formula": "Raíz + ɓʉ (singular) / panʉ (plural)",
+      "explanation": "Expresa la acción que se está realizando en este preciso momento (Pág. 35 del manual)."
+    },
+    {
+      "id": "pres_hab",
+      "name": "Presente Habitual (Suele hacer)",
+      "suffix_singular": "bari",
+      "suffix_plural": "bada",
+      "formula": "Raíz + bari (singular) / bada (plural)",
+      "explanation": "Expresa una costumbre o acción repetitiva (ej. idibada = suelen preguntar)."
+    },
+    {
+      "id": "past_simple",
+      "name": "Pasado Simple (Hizo / Realizó)",
+      "suffix_singular": "sia",
+      "suffix_plural": "siɗaa",
+      "formula": "Raíz + sia (singular) / siɗaa (plural)",
+      "explanation": "Expresa una acción completada en el pasado (ej. cawasia = aprendió)."
+    },
+    {
+      "id": "future_simple",
+      "name": "Futuro Simple (Hará)",
+      "suffix_singular": "ya",
+      "suffix_plural": "dia",
+      "formula": "Raíz + ya (singular) / dia o nia (plural)",
+      "explanation": "Expresa lo que sucederá más adelante (ej. carebaya = ayudará)."
+    },
+    {
+      "id": "imperative",
+      "name": "Imperativo (Mandato o invitación)",
+      "suffix_singular": "dua",
+      "suffix_plural": "dadua",
+      "formula": "Raíz + dua (singular) / dadua o nadua (plural)",
+      "explanation": "Se usa para invitar amablemente o dar una orden (ej. cawadua = ¡aprenda!)."
+    },
+    {
+      "id": "negative",
+      "name": "Negativo (No hace / No puede)",
+      "suffix_singular": "caa",
+      "suffix_plural": "nacaa",
+      "formula": "Raíz + caa (singular) / nacaa (plural)",
+      "explanation": "Niega rotundamente la acción del verbo (ej. beɗeacaa = no habla)."
+    }
+  ]
+}

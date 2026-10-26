@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Sufijo Ergativo (-ba / -ba)",
+    "rule": "Si el verbo es transitivo (la acción recae sobre un objeto o persona diferente), el sujeto lleva el sufijo -ba.",
+    "examples": [
+      {
+        "embera": "Ãcõrẽba diabuesi idji warra",
+        "spanish": "Dios envió a su hijo (verbo transitivo -> Ãcõrẽba)"
+      },
+      {
+        "embera": "Bibliaba careba ɓʉda",
+        "spanish": "La Biblia ayuda (verbo transitivo -> Bibliaba)"
+      },
+      {
+        "embera": "Mʉa cawa ɓʉ Ẽberã beɗea",
+        "spanish": "Yo estoy aprendiendo emberá (Mʉ + a -> Mʉa)"
+      }
+    ]
+  },
+  {
+    "name": "Sufijo de Estado / Ser / Intransitivo (-ra)",
+    "rule": "Si la oración usa verbos intransitivos o verbos de ser/estar (identidad, descripción), el sujeto lleva el sufijo -ra.",
+    "examples": [
+      {
+        "embera": "Mʉra Testigo de Jehová",
+        "spanish": "Yo soy Testigo de Jehová"
+      },
+      {
+        "embera": "Jesura so bia basía",
+        "spanish": "Jesús fue un hombre bueno"
+      },
+      {
+        "embera": "Naʉgʉ carta bio biara ɓʉ",
+        "spanish": "Este libro es muy bueno"
+      }
+    ]
+  },
+  {
+    "name": "Preguntas de Sí o No (-ca)",
+    "rule": "Para formular una pregunta de respuesta 'Sí o No', se añade la partícula -ca al final del verbo o frase.",
+    "examples": [
+      {
+        "embera": "¿Bʉa cawa quĩrĩã ɓʉca?",
+        "spanish": "¿Usted quiere aprender?"
+      },
+      {
+        "embera": "¿Cawasica?",
+        "spanish": "¿Entendió?"
+      },
+      {
+        "embera": "¿Domia naẽna beɗeasiɗaa quĩrãneba ɓʉca?",
+        "spanish": "¿Recuerda lo que hablamos la semana pasada?"
+      }
+    ]
+  },
+  {
+    "name": "Regla Fonética de la 'Y' Nasalizada",
+    "rule": "Si antes o después de la 'Y' hay una vocal nasal (ã, ẽ, ĩ, õ, ũ, ʉ̃), la 'Y' suena como 'Ñ'.",
+    "examples": [
+      {
+        "embera": "Wãya",
+        "spanish": "Otra vez / De nuevo (se pronuncia 'Waña')"
+      },
+      {
+        "embera": "Cãyãbara",
+        "spanish": "Más que / Comparativo (se pronuncia 'Cañabara')"
+      },
+      {
+        "embera": "Waya",
+        "spanish": "Respeto (como no tiene nasales, suena 'Waya' normal)"
+      }
+    ]
+  },
+  {
+    "name": "Consonantes Implosivas (ɓ y ɗ)",
+    "rule": "La 'ɓ' y la 'ɗ' son implosivas sonoras: se producen cerrando los labios o la lengua e inhalando un pulso de aire hacia adentro, a diferencia de la 'b' y 'd' del español.",
+    "examples": [
+      {
+        "embera": "Ɓʉsriɗa",
+        "spanish": "Felicidad / Gozo"
+      },
+      {
+        "embera": "Beɗea",
+        "spanish": "Palabra / Idioma"
+      },
+      {
+        "embera": "Dauɓara (Lágrima) vs Daubara (Hechicero)",
+        "spanish": "Par mínimo crítico"
+      }
+    ]
+  }
+]

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dóbida Aprende | Curso Bíblico Emberá Dóbida</title>
+  
+  <!-- PWA & Mobile Meta Tags -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007E84">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Dóbida Aprende">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 min-h-screen text-slate-900 flex flex-col justify-center">
+
+  <!-- Main Phone / App Viewport -->
+  <div class="app-viewport flex flex-col">
+    
+    <!-- Top Global App Bar -->
+    <header class="bg-slate-900 text-white px-4 py-3 flex items-center justify-between shadow-md border-b border-teal-900/60 z-20">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center font-embera font-extrabold text-white text-lg shadow-sm">
+          Ɓ
+        </div>
+        <div>
+          <h1 class="text-sm font-extrabold tracking-tight text-white flex items-center gap-1.5">
+            Dóbida Aprende <span class="text-[9px] bg-teal-500/20 text-teal-300 font-bold px-1.5 py-0.5 rounded border border-teal-500/30">Ɓʉsriɗa</span>
+          </h1>
+          <p class="text-[10px] text-slate-400">Enseñanza Bíblica Emberá Dóbida</p>
+        </div>
+      </div>
+
+      <!-- Streaks & Gems Counter -->
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1 bg-slate-800/90 border border-slate-700 px-2 py-1 rounded-full text-xs font-bold text-amber-400 shadow-inner" title="Días en racha">
+          <span>🔥</span> <span id="stat-streak">4</span>
+        </div>
+        <div class="flex items-center gap-1 bg-teal-950/70 border border-teal-800/80 px-2.5 py-1 rounded-full text-xs font-bold text-teal-300 shadow-inner" title="Gemas acumuladas">
+          <span>💎</span> <span id="stat-gems">50</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- PWA Install Banner (Shown on Mobile / Android) -->
+    <div id="pwa-install-banner" class="bg-gradient-to-r from-teal-700 to-cyan-700 text-white px-4 py-2.5 flex items-center justify-between shadow-md border-b border-teal-800 hidden">
+      <div class="flex items-center gap-2">
+        <span class="text-lg">📲</span>
+        <div>
+          <p class="text-xs font-bold leading-tight">Instalar en tu Celular</p>
+          <p class="text-[10px] text-teal-100">Usa la app sin conexión a internet</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <button id="pwa-install-btn" class="px-3 py-1 bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold text-xs rounded-lg shadow-sm transition">
+          Instalar
+        </button>
+        <button onclick="document.getElementById('pwa-install-banner').classList.add('hidden')" class="p-1 text-teal-200 hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content Body (Scrollable) -->
+    <main class="flex-1 overflow-y-auto">
+      
+      <!-- TAB 1: ESTUDIO BÍBLICO (KARAOKE BILINGÜE) -->
+      <section id="tab-study" class="tab-content active"></section>
+
+      <!-- TAB 2: GRAMÁTICA Y CONJUGADOR -->
+      <section id="tab-grammar" class="tab-content"></section>
+
+      <!-- TAB 3: DIÁLOGOS DE CAMPO -->
+      <section id="tab-dialogue" class="tab-content"></section>
+
+      <!-- TAB 4: FONÉTICA NATIVA -->
+      <section id="tab-phonetics" class="tab-content"></section>
+
+      <!-- TAB 5: GLOSARIO NATIVO -->
+      <section id="tab-dictionary" class="tab-content"></section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar (5 Tabs) -->
+    <nav class="fixed lg:absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 px-1 py-1.5 flex justify-around items-center shadow-lg z-30 max-w-[480px] mx-auto">
+      <button data-tab-target="study" class="flex flex-col items-center py-1 px-2 rounded-xl text-teal-700 font-bold transition">
+        <i data-lucide="book-open" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px]">Estudio</span>
+      </button>
+
+      <button data-tab-target="grammar" class="flex flex-col items-center py-1 px-2 rounded-xl text-slate-400 transition hover:text-slate-700">
+        <i data-lucide="sparkles" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px]">Gramática</span>
+      </button>
+
+      <button data-tab-target="dialogue" class="flex flex-col items-center py-1 px-2 rounded-xl text-slate-400 transition hover:text-slate-700">
+        <i data-lucide="message-square" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px]">Diálogo</span>
+      </button>
+
+      <button data-tab-target="phonetics" class="flex flex-col items-center py-1 px-2 rounded-xl text-slate-400 transition hover:text-slate-700">
+        <i data-lucide="headphones" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px]">Fonética</span>
+      </button>
+
+      <button data-tab-target="dictionary" class="flex flex-col items-center py-1 px-2 rounded-xl text-slate-400 transition hover:text-slate-700">
+        <i data-lucide="search" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px]">Glosario</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- MODAL: AI Linguistic Inspector -->
+  <div id="ai-inspector-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-5 shadow-2xl border border-slate-100">
+      <div class="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-8 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-sm">
+            ✨
+          </span>
+          <div>
+            <h3 class="text-xs font-bold text-teal-900 uppercase tracking-wider">Inspector IA Dóbida</h3>
+            <span class="text-[10px] text-slate-400">Análisis Morfológico y Léxico</span>
+          </div>
+        </div>
+        <button onclick="closeAIInspectorModal()" class="p-1 text-slate-400 hover:text-slate-700 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Target Word & Equivalent -->
+      <div class="p-3.5 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl border border-teal-200/80 mb-3">
+        <div class="flex items-baseline justify-between">
+          <h2 id="ai-word-embera" class="text-xl font-extrabold text-slate-900 font-embera"></h2>
+          <span id="ai-word-pos" class="text-[10px] font-bold text-teal-800 bg-white px-2 py-0.5 rounded-full border border-teal-200 shadow-xs"></span>
+        </div>
+        <p class="text-[10px] text-slate-500 mt-1 uppercase font-semibold tracking-wider">Equivalente al Español:</p>
+        <p id="ai-word-spanish" class="text-base font-bold text-teal-950 mt-0.5"></p>
+      </div>
+
+      <!-- Morphology decomposition -->
+      <div class="space-y-2 mb-3">
+        <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/90 text-xs">
+          <span class="text-slate-500 font-semibold block text-[10px] uppercase">Raíz identificada:</span>
+          <span id="ai-word-root" class="font-bold text-slate-800 font-embera text-sm"></span>
+        </div>
+        <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/90 text-xs">
+          <span class="text-slate-500 font-semibold block text-[10px] uppercase">Sufijo / Función Gramatical:</span>
+          <p id="ai-suffix-rule" class="text-slate-700 text-xs mt-0.5 leading-relaxed"></p>
+        </div>
+      </div>
+
+      <!-- Native Audio Controls -->
+      <div id="ai-native-audio-controls" class="mt-2"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: Feedback Dialogue Evaluation -->
+  <div id="feedback-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-end sm:items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-5 shadow-2xl border border-slate-100 transform transition-all">
+      <div id="feedback-icon" class="flex justify-center"></div>
+      <h3 id="feedback-title" class="text-center font-bold text-lg mb-1"></h3>
+      <div id="feedback-text" class="text-center text-xs font-semibold text-slate-700 italic bg-slate-50 p-2.5 rounded-xl border border-slate-200 mb-3 font-embera"></div>
+      
+      <!-- Recast del Copiloto IA -->
+      <div id="feedback-recast-container" class="bg-gradient-to-r from-teal-50 to-cyan-50 p-3 rounded-2xl border border-teal-200/90 mb-3 hidden">
+        <span class="text-[10px] uppercase font-bold text-teal-800 tracking-wide flex items-center gap-1.5 mb-1">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-teal-600"></i> Réplica Cálida del Copiloto IA (Recast):
+        </span>
+        <p id="feedback-recast" class="text-xs font-bold text-teal-950 font-embera leading-snug"></p>
+      </div>
+
+      <div class="bg-teal-50/70 p-3 rounded-2xl border border-teal-200/60 mb-4">
+        <span class="text-[10px] uppercase font-bold text-teal-800 tracking-wide flex items-center gap-1 mb-1">
+          <i data-lucide="book-check" class="w-3.5 h-3.5"></i> Explicación del Manual Dóbida:
+        </span>
+        <p id="feedback-explanation" class="text-xs text-slate-700 leading-relaxed"></p>
+      </div>
+
+      <button id="feedback-next-btn" class="w-full py-3 bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center justify-center gap-2">
+        Continuar
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL: Scenario Picker -->
+  <div id="scenario-picker-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-5 shadow-2xl border border-slate-100">
+      <div class="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
+        <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4 text-teal-700"></i> Selecciona un Escenario
+        </h3>
+        <button onclick="document.getElementById('scenario-picker-modal').classList.add('hidden')" class="p-1 text-slate-400 hover:text-slate-700 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="scenario-picker-list" class="space-y-2 max-h-80 overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: Phonetic Guide Modal for unclipped words -->
+  <div id="phonetic-guide-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-5 shadow-2xl border border-slate-100">
+      <div class="flex items-center justify-between mb-2 pb-2 border-b border-slate-100">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-8 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-sm">
+            🎙️
+          </span>
+          <div>
+            <h3 id="guide-word" class="text-base font-extrabold text-slate-900 font-embera"></h3>
+            <span class="text-[10px] text-slate-400 font-sans">Guía de Articulación Nativa Dóbida</span>
+          </div>
+        </div>
+        <button onclick="closePhoneticGuideModal()" class="p-1 text-slate-400 hover:text-slate-700 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="my-3">
+        <p class="text-xs text-slate-600 mb-2 font-medium">Fonemas clave detectados en esta palabra según el Manual Dóbida:</p>
+        <div id="guide-phonemes-list"></div>
+      </div>
+
+      <button onclick="closePhoneticGuideModal()" class="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition">
+        Entendido
+      </button>
+    </div>
+  </div>
+
+  <!-- Main App Script -->
+  <script src="app.js"></script>
+
+  <!-- PWA Service Worker & Install Logic -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('[PWA] Service Worker activo:', reg.scope))
+          .catch(err => console.log('[PWA] Error Service Worker:', err));
+      });
+    }
+
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const banner = document.getElementById('pwa-install-banner');
+      if (banner) banner.classList.remove('hidden');
+    });
+
+    const pwaBtn = document.getElementById('pwa-install-btn');
+    if (pwaBtn) {
+      pwaBtn.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+          alert("Para instalar en Android: Abre el menú ⋮ de Chrome y selecciona 'Instalar aplicación' o 'Agregar a la pantalla principal'.");
+          return;
+        }
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log('[PWA] Resultado de instalación:', outcome);
+        deferredPrompt = null;
+        const banner = document.getElementById('pwa-install-banner');
+        if (banner) banner.classList.add('hidden');
+      });
+    }
+  </script>
+</body>
+</html>

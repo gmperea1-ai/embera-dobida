@@ -1,0 +1,116 @@
+import json
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+lesson1_data = {
+    "id": "lesson-1",
+    "number": 1,
+    "title_embera": "¿Bibliaba sãwã poya carebaida bʉra?",
+    "title_spanish": "¿Cómo puede ayudarle la Biblia?",
+    "audio_url": "https://cfp2.jw-cdn.org/a/3bca0e4/1/o/lff_EMP_03.mp3",
+    "key_verse": {
+        "reference": "2 Timoteo 3:16",
+        "text_embera": "Jũma Idji Beɗeara [Bibliara...] bia ɓʉa.",
+        "text_spanish": "Toda la Escritura es inspirada por Dios y provechosa."
+    },
+    "sections": [
+        {
+            "id": "sec-intro",
+            "type": "intro",
+            "heading_embera": "Introducción",
+            "heading_spanish": "Puntos de partida",
+            "paragraphs": [
+                {
+                    "embera": "Zocãrã ẽberãrãba idibadada: ¿Cãrẽã nama panʉda? ¿Cãrẽã djuburia panʉda? ¿Cãrẽ cãrẽã beubada? ¿Cãrẽda mãwãida ewari zebʉrʉɗera?",
+                    "spanish": "Muchas personas se preguntan: ¿Por qué estamos aquí? ¿Por qué sufrimos? ¿Por qué morimos? ¿Qué pasará en el futuro?",
+                    "audio_time_start": 30,
+                    "audio_time_end": 45,
+                    "tokens": [
+                        {"word": "Zocãrã", "meaning": "Muchos", "pos": "adj"},
+                        {"word": "ẽberãrãba", "meaning": "Las personas (sujeto activo)", "pos": "noun+ba"},
+                        {"word": "idibadada", "meaning": "Suelen preguntar", "pos": "verb"},
+                        {"word": "Cãrẽã", "meaning": "¿Por qué?", "pos": "interrogative"},
+                        {"word": "nama", "meaning": "Aquí / Acá", "pos": "adv"},
+                        {"word": "panʉda", "meaning": "Estamos / están (plural)", "pos": "verb"},
+                        {"word": "djuburia", "meaning": "Sufrimiento / dolor", "pos": "noun"},
+                        {"word": "beubada", "meaning": "Mueren (habitual)", "pos": "verb"},
+                        {"word": "ewari", "meaning": "Día / tiempo", "pos": "noun"},
+                        {"word": "zebʉrʉɗera", "meaning": "Cuando venga / futuro", "pos": "verb+time"}
+                    ]
+                },
+                {
+                    "embera": "Zocãrã ẽberãrãba cawabadada Bibliaba jara ɓʉra jãʉ̃ idi ɓʉra idjaɓa ʉ̃rãga bia dia ɓʉda bia wãnamãrẽã.",
+                    "spanish": "Muchas personas han aprendido lo que dice la Biblia y que da buenos consejos para que nos vaya bien.",
+                    "audio_time_start": 46,
+                    "audio_time_end": 62,
+                    "tokens": [
+                        {"word": "Bibliaba", "meaning": "La Biblia (sujeto activo)", "pos": "noun+ba"},
+                        {"word": "jara ɓʉra", "meaning": "Lo que dice", "pos": "verb+aspect"},
+                        {"word": "ʉ̃rãga bia", "meaning": "Buenos consejos", "pos": "noun+adj"},
+                        {"word": "dia ɓʉda", "meaning": "Está dando", "pos": "verb"},
+                        {"word": "bia", "meaning": "Bien / bueno", "pos": "adv"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sec-1",
+            "type": "point",
+            "heading_embera": "1. ¿Cãrẽ idiɗada Bibliaba panubarida?",
+            "heading_spanish": "1. ¿Qué preguntas responde la Biblia?",
+            "paragraphs": [
+                {
+                    "embera": "Bibliaba panu ɓʉda naʉ̃gʉ idi ɓʉra biara ɓʉda: ¿Sãmaʉba zesiɗa dadjirãra? ¿Cãrẽ cãrẽã naʉ̃ ẽjũãne panʉda? ¿Cãrẽda mãwãida beuɗacare?",
+                    "spanish": "La Biblia responde preguntas muy importantes: ¿De dónde vinimos? ¿Para qué estamos en la tierra? ¿Qué pasa cuando morimos?",
+                    "audio_time_start": 65,
+                    "audio_time_end": 85,
+                    "tokens": [
+                        {"word": "panu ɓʉda", "meaning": "Responde / contesta", "pos": "verb"},
+                        {"word": "Sãmaʉba", "meaning": "¿De dónde?", "pos": "interrogative"},
+                        {"word": "zesiɗa", "meaning": "Vinieron / vinimos", "pos": "verb (pasado)"},
+                        {"word": "dadjirãra", "meaning": "Nosotros todos", "pos": "pronoun+ra"},
+                        {"word": "ẽjũãne", "meaning": "En la tierra", "pos": "noun+loc"},
+                        {"word": "beuɗacare", "meaning": "Después de morir", "pos": "verb+after"}
+                    ]
+                },
+                {
+                    "embera": "Bibliaba careba ɓʉda jãʉ̃ idi ɓʉra panui carea. Zocãrã ẽberãrãba Bibliaba cawaɗapeɗa bio ɓʉsriɗa panʉda.",
+                    "spanish": "La Biblia ayuda a responder estas preguntas. Muchas personas después de aprender de la Biblia son muy felices.",
+                    "audio_time_start": 86,
+                    "audio_time_end": 105,
+                    "tokens": [
+                        {"word": "careba ɓʉda", "meaning": "Ayuda", "pos": "verb"},
+                        {"word": "cawaɗapeɗa", "meaning": "Después de haber aprendido", "pos": "verb+gerundio"},
+                        {"word": "bio", "meaning": "Muy / mucho", "pos": "adv"},
+                        {"word": "ɓʉsriɗa", "meaning": "Felices / gozo", "pos": "adj/noun"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sec-2",
+            "type": "point",
+            "heading_embera": "2. ¿Sãwã careba ɓʉda Bibliaba dadjirãra ewariza capipia panani carea?",
+            "heading_spanish": "2. ¿Cómo nos ayuda la Biblia a ser felices cada día?",
+            "paragraphs": [
+                {
+                    "embera": "Bibliaba ʉ̃rãga biada dia ɓʉda. Ejemploda, jara ɓʉda cãrẽda poya oɗida ɓʉsriɗa panani carea dadji cuariarãme, necai panani carea idjaɓa bia trajaɗi carea.",
+                    "spanish": "La Biblia da buenos consejos. Por ejemplo, dice qué podemos hacer para ser felices en familia, estar en paz y trabajar bien.",
+                    "audio_time_start": 108,
+                    "audio_time_end": 135,
+                    "tokens": [
+                        {"word": "dadji cuariarãme", "meaning": "Con nuestra familia", "pos": "noun+with"},
+                        {"word": "necai", "meaning": "Paz / tranquilidad", "pos": "noun"},
+                        {"word": "trajaɗi carea", "meaning": "Para trabajar", "pos": "verb+purpose"}
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+with open("lesson1.json", "w", encoding="utf-8") as f:
+    json.dump(lesson1_data, f, ensure_ascii=False, indent=2)
+
+print("Saved lesson1.json!")

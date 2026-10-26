@@ -1,0 +1,201 @@
+[
+  {
+    "id": "k1",
+    "start": 5.2,
+    "end": 11.9,
+    "embera": "¿Bibliaba sãwã poya carebaida bʉra?",
+    "spanish": "¿Cómo puede ayudarle la Biblia a usted?",
+    "section": "Título de la Lección",
+    "words": [
+      {"em": "Bibliaba", "es": "La Biblia", "pos": "Sujeto de acción (-ba)"},
+      {"em": "sãwã", "es": "cómo", "pos": "Interrogativo"},
+      {"em": "poya", "es": "puede", "pos": "Verbo auxiliar poder"},
+      {"em": "carebaida", "es": "ayudar", "pos": "Verbo con sufijo subordinado (-da)"},
+      {"em": "bʉra", "es": "a usted", "pos": "Pronombre con sufijo de estado (-ra)"}
+    ]
+  },
+  {
+    "id": "k2",
+    "start": 13.0,
+    "end": 15.1,
+    "embera": "Zocãrã ẽberãrãba idibadada:",
+    "spanish": "Muchas personas suelen preguntarse:",
+    "section": "Párrafo 1: Las grandes preguntas",
+    "words": [
+      {"em": "Zocãrã", "es": "Muchas", "pos": "Cuantificador"},
+      {"em": "ẽberãrãba", "es": "las personas", "pos": "Sustantivo plural con sufijo agente (-rãba)"},
+      {"em": "idibadada", "es": "suelen preguntar", "pos": "Verbo idi (preguntar) + -bada (habitual)"}
+    ]
+  },
+  {
+    "id": "k3",
+    "start": 15.65,
+    "end": 17.2,
+    "embera": "¿Cãrẽã nama panʉda?",
+    "spanish": "¿Por qué estamos aquí?",
+    "section": "Párrafo 1",
+    "words": [
+      {"em": "Cãrẽã", "es": "¿Por qué", "pos": "Interrogativo causal"},
+      {"em": "nama", "es": "aquí / acá", "pos": "Adverbio de lugar"},
+      {"em": "panʉda", "es": "estamos?", "pos": "Estar plural presente continuo"}
+    ]
+  },
+  {
+    "id": "k4",
+    "start": 17.7,
+    "end": 19.3,
+    "embera": "¿Cãrẽã djuburia panʉda?",
+    "spanish": "¿Por qué estamos sufriendo?",
+    "section": "Párrafo 1",
+    "words": [
+      {"em": "Cãrẽã", "es": "¿Por qué", "pos": "Interrogativo causal"},
+      {"em": "djuburia", "es": "sufrimiento / dolor", "pos": "Sustantivo de aflicción"},
+      {"em": "panʉda", "es": "estamos?", "pos": "Estar plural"}
+    ]
+  },
+  {
+    "id": "k5",
+    "start": 20.0,
+    "end": 21.3,
+    "embera": "¿Cãrẽ cãrẽã beubada?",
+    "spanish": "¿Por qué razón morimos?",
+    "section": "Párrafo 1",
+    "words": [
+      {"em": "Cãrẽ cãrẽã", "es": "¿Por qué razón", "pos": "Locución interrogativa enfática"},
+      {"em": "beubada", "es": "morimos?", "pos": "Verbo beu (morir) + -bada (habitual)"}
+    ]
+  },
+  {
+    "id": "k6",
+    "start": 22.05,
+    "end": 24.8,
+    "embera": "¿Cãrẽda mãwãida ewari zebʉrʉɗera?",
+    "spanish": "¿Qué pasará en el futuro?",
+    "section": "Párrafo 1",
+    "words": [
+      {"em": "Cãrẽda", "es": "¿Qué cosa", "pos": "Interrogativo"},
+      {"em": "mãwãida", "es": "sucederá / pasará", "pos": "Verbo acontecer"},
+      {"em": "ewari", "es": "en los días / tiempo", "pos": "Sustantivo temporal"},
+      {"em": "zebʉrʉɗera", "es": "cuando vengan?", "pos": "Verbo zei (venir) + -bʉrʉɗe (cuando)"}
+    ]
+  },
+  {
+    "id": "k7",
+    "start": 26.15,
+    "end": 34.3,
+    "embera": "Idjaɓa ¿cãrẽã sopuabadada ewariza ne coɗi carea, wua jʉ̃ni carea idjaɓa carebaɗi carea dadji cuariarã?",
+    "spanish": "Y ¿por qué nos preocupamos por la comida de cada día, la ropa o sostener a la familia?",
+    "section": "Párrafo 1",
+    "words": [
+      {"em": "Idjaɓa", "es": "Y / Además", "pos": "Conector coordinante"},
+      {"em": "sopuabadada", "es": "nos preocupamos", "pos": "Verbo sopuai (preocuparse)"},
+      {"em": "ewariza", "es": "cada día", "pos": "Frecuencia temporal (-za)"},
+      {"em": "ne coɗi carea", "es": "para comer", "pos": "Propósito (-carea)"},
+      {"em": "wua jʉ̃ni carea", "es": "para vestir", "pos": "Propósito (-carea)"},
+      {"em": "dadji cuariarã", "es": "nuestra familia", "pos": "Sustantivo de parentesco"}
+    ]
+  },
+  {
+    "id": "k8",
+    "start": 35.8,
+    "end": 48.8,
+    "embera": "Zocãrã ẽberãrãba cawabadada Bibliaba jara ɓʉra jãʉ̃ idi ɓʉra idjaɓa ʉ̃rãga bia dia ɓʉda bia wãnamãrẽã.",
+    "spanish": "Muchas personas han aprendido lo que la Biblia dice y que da buenos consejos para que nos vaya bien.",
+    "section": "Párrafo 1: La respuesta de la Biblia",
+    "words": [
+      {"em": "cawabadada", "es": "han aprendido", "pos": "Verbo cawai (aprender)"},
+      {"em": "Bibliaba jara ɓʉra", "es": "lo que la Biblia dice", "pos": "Cláusula relativa"},
+      {"em": "ʉ̃rãga bia", "es": "buenos consejos", "pos": "Sustantivo + adjetivo"},
+      {"em": "dia ɓʉda", "es": "está dando", "pos": "Verbo diai (dar) + aspecto -ɓʉ"}
+    ]
+  },
+  {
+    "id": "k9",
+    "start": 50.0,
+    "end": 60.6,
+    "embera": "¿Bʉa quĩcha ɓʉda Bibliaba poya carebaida dewara ẽberãrãra?",
+    "spanish": "¿Cree usted que la Biblia puede ayudar a otras personas?",
+    "section": "Pregunta de reflexión",
+    "words": [
+      {"em": "Bʉa quĩcha ɓʉda", "es": "¿Usted piensa / cree?", "pos": "Verbo quĩchai (pensar)"},
+      {"em": "dewara ẽberãrãra", "es": "a otras personas?", "pos": "dewara (otro) + ẽberãrã (personas)"}
+    ]
+  },
+  {
+    "id": "k10",
+    "start": 61.4,
+    "end": 67.7,
+    "embera": "1. ¿Cãrẽ idiɗada Bibliaba panubarida?",
+    "spanish": "1. ¿Qué preguntas responde la Biblia?",
+    "section": "Punto 1 oficial",
+    "words": [
+      {"em": "Cãrẽ idiɗada", "es": "¿Qué preguntas", "pos": "Interrogativo"},
+      {"em": "panubarida", "es": "suele responder?", "pos": "Verbo panui (responder) habitual"}
+    ]
+  },
+  {
+    "id": "k11",
+    "start": 68.3,
+    "end": 74.0,
+    "embera": "Bibliaba panu ɓʉda naʉ̃gʉ idi ɓʉra biara ɓʉda:",
+    "spanish": "La Biblia responde preguntas muy importantes como estas:",
+    "section": "Punto 1",
+    "words": [
+      {"em": "Bibliaba", "es": "La Biblia", "pos": "Sujeto agente (-ba)"},
+      {"em": "panu ɓʉda", "es": "responde", "pos": "Verbo panui en presente"},
+      {"em": "biara ɓʉda", "es": "muy sobresalientes / importantes", "pos": "Comparativo biara"}
+    ]
+  },
+  {
+    "id": "k12",
+    "start": 74.1,
+    "end": 85.2,
+    "embera": "¿Sãmaʉba zesiɗa dadjirãra? ¿Cãrẽ cãrẽã naʉ̃ ẽjũãne panʉda?",
+    "spanish": "¿De dónde venimos todos nosotros? ¿Por qué estamos en esta tierra?",
+    "section": "Punto 1",
+    "words": [
+      {"em": "Sãmaʉba zesiɗa", "es": "¿De dónde vinimos", "pos": "Verbo zei (venir) en pasado plural"},
+      {"em": "dadjirãra", "es": "nosotros todos?", "pos": "Pronombre inclusivo (-ra)"},
+      {"em": "naʉ̃ ẽjũãne", "es": "en esta tierra", "pos": "Locativo ẽjũã (tierra) + -ne (en)"}
+    ]
+  },
+  {
+    "id": "k13",
+    "start": 85.2,
+    "end": 94.1,
+    "embera": "¿Cãrẽã ẽberãrãra biara djuburia panʉda? ¿Cãrẽda mãwãida beuɗacare?",
+    "spanish": "¿Por qué la gente sufre tanto? ¿Qué pasa después de morir?",
+    "section": "Punto 1",
+    "words": [
+      {"em": "biara djuburia", "es": "tanto sufrimiento", "pos": "Cualidad de aflicción"},
+      {"em": "beuɗacare", "es": "después de la muerte?", "pos": "Temporal beu (morir) + -ɗacare (después de)"}
+    ]
+  },
+  {
+    "id": "k14",
+    "start": 106.1,
+    "end": 113.5,
+    "embera": "2. ¿Sãwã careba ɓʉda Bibliaba dadjirãra ewariza capipia panani carea?",
+    "spanish": "2. ¿Cómo nos ayuda la Biblia a ser felices cada día?",
+    "section": "Punto 2 oficial",
+    "words": [
+      {"em": "Sãwã careba ɓʉda", "es": "¿Cómo nos ayuda", "pos": "Verbo carebai (ayudar)"},
+      {"em": "ewariza", "es": "todos los días", "pos": "Frecuencia (-za)"},
+      {"em": "capipia panani carea", "es": "para estar contentos / felices?", "pos": "Estado emocional capipia"}
+    ]
+  },
+  {
+    "id": "k15",
+    "start": 114.0,
+    "end": 135.0,
+    "embera": "Bibliaba ʉ̃rãga biada dia ɓʉda. Ejemploda, jara ɓʉda cãrẽda poya oɗida ɓʉsriɗa panani carea dadji cuariarãme, necai panani carea idjaɓa bia trajaɗi carea.",
+    "spanish": "La Biblia da buenos consejos. Por ejemplo, dice qué podemos hacer para ser felices en familia, tener paz y trabajar bien.",
+    "section": "Punto 2",
+    "words": [
+      {"em": "ɓʉsriɗa panani carea", "es": "para vivir con gozo y felicidad", "pos": "Término central ɓʉsriɗa"},
+      {"em": "dadji cuariarãme", "es": "con nuestra propia familia", "pos": "Compañía (-me)"},
+      {"em": "necai panani carea", "es": "para vivir en paz y calma", "pos": "Término necai (paz/tranquilidad)"},
+      {"em": "bia trajaɗi carea", "es": "para trabajar bien", "pos": "Verbo trajai (trabajar)"}
+    ]
+  }
+]
