@@ -16,22 +16,17 @@ jobs:
     - name: Configurar Java 17
       uses: actions/setup-java@v4
       with:
-        distribution: 'zulu'
+        distribution: 'temurin'
         java-version: '17'
 
-    - name: Configurar Android SDK
-      uses: android-actions/setup-android@v3
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
 
-    - name: Dar permisos de ejecución a Gradle
+    - name: Generar Gradle Wrapper y Compilar APK
       run: |
         cd android
         gradle wrapper --gradle-version 8.5
-        chmod +x gradlew
-
-    - name: Compilar APK (Release / Debug)
-      run: |
-        cd android
-        ./gradlew assembleDebug
+        ./gradlew assembleDebug --stacktrace
 
     - name: Subir APK como Artefacto Descargable
       uses: actions/upload-artifact@v4
