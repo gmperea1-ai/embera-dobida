@@ -1,3 +1,25 @@
+// Safe Lucide guard for offline environments
+if (typeof window.lucide === 'undefined') {
+  window.lucide = {
+    createIcons: function() {
+      // Fallback: replace data-lucide elements with simple symbols or text if icons are missing
+      document.querySelectorAll('[data-lucide]').forEach(function(el) {
+        if (!el.textContent.trim()) {
+          var name = el.getAttribute('data-lucide') || '';
+          if (name.includes('volume') || name.includes('audio')) el.textContent = '🔊';
+          else if (name.includes('mic')) el.textContent = '🎙️';
+          else if (name.includes('book')) el.textContent = '📖';
+          else if (name.includes('sparkle')) el.textContent = '✨';
+          else if (name.includes('check')) el.textContent = '✓';
+          else if (name.includes('x')) el.textContent = '✕';
+          else if (name.includes('compass') || name.includes('map')) el.textContent = '🧭';
+          else if (name.includes('search')) el.textContent = '🔍';
+        }
+      });
+    }
+  };
+}
+
 // app.js - Dóbida Aprende Engine: Bilingual Karaoke, Grammar & Verb Conjugator, Native Audio & AI Inspector
 
 class NativeAudioManager {
@@ -252,6 +274,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Load JSON Data
 async function loadData() {
+  if (typeof window.APP_DATA !== 'undefined' && window.APP_DATA) {
+    console.log("[App] Usando datos locales bundled en APP_DATA (100% offline)");
+    state.scenarios = window.APP_DATA.dialogues || [];
+    state.grammarData = window.APP_DATA.verbs_grammar || {};
+    state.lesson = window.APP_DATA.lesson1 || null;
+    state.karaokeData = window.APP_DATA.lesson1_karaoke || [];
+    state.dictionary = window.APP_DATA.dictionary || [];
+    state.nativeLexicon = window.APP_DATA.native_lexicon || {};
+    state.filteredDict = state.dictionary.slice(0, 100);
+
+    if (state.scenarios.length > 0) {
+      state.currentScenario = state.scenarios[0];
+    }
+    return;
+  }
+
   try {
     const [scenariosRes, grammarRes, lessonRes, karaokeRes, dictRes, lexiconRes] = await Promise.all([
       fetch('dialogues.json').then(r => r.json()).catch(() => []),
